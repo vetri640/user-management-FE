@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register-bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    background-image: 
+        linear-gradient(transparent 1px, rgba(255, 102, 0, 0.1) 1px),
+        linear-gradient(90deg, transparent 1px, rgba(255, 102, 0, 0.1) 1px);
+    background-size: 75px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Glass Box */
+.register-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 80px rgba(255, 102, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shine Animation */
+.register-container .shine {
+    content: "";
+    position: absolute;
+    top: 0; left: -75%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,165,0,0.2), transparent);
+    transform: skewX(-20deg);
+    animation: shineMove 3s infinite;
+    z-index: 1;
+}
+
+@keyframes shineMove {
+    0% { left: -75%; }
+    50% { left: 125%; }
+    100% { left: 125%; }
+}
+
+/* Inner Content */
+.register-container * {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-size: 26px;
+    color: #ff5c00;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.input::placeholder {
+    color: #ff5c00;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    background: #ff5c00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 5px;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background: #e65100;
+}
+
+.text {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.link {
+    color: #ff5c00;
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+
+
+/* Fullscreen 3D Grid Background */
+.bg-3d-grid {
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    background-image: 
+        linear-gradient(transparent 1px, rgba(255,102,0,0.08) 1px),
+        linear-gradient(90deg, transparent 1px, rgba(255,102,0,0.08) 1px);
+    background-size: 75px 75px;
+    animation: gradientMove 10s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glass Box */
+.glass-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 80px rgba(255, 102, 0, 0.3);
+}
+
+/* Shine Animation */
+.shine {
+    position: absolute;
+    top: 0; left: -75%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,165,0,0.3), transparent);
+    transform: skewX(-20deg);
+    animation: shineMove 3s infinite;
+}
+
+@keyframes shineMove {
+    0% { left: -75%; }
+    50% { left: 125%; }
+    100% { left: 125%; }
+}
+
+/* Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}

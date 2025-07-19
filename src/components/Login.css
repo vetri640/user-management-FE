@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    background-image: 
+        linear-gradient(transparent 1px, rgba(255, 102, 0, 0.1) 1px),
+        linear-gradient(90deg, transparent 1px, rgba(255, 102, 0, 0.1) 1px);
+    background-size: 75px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Glass Box */
+.login-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 80px rgba(255, 102, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 380px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shine Animation */
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: -75%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,165,0,0.2), transparent);
+    transform: skewX(-20deg);
+    animation: shineMove 3s infinite;
+    z-index: 1;
+}
+
+@keyframes shineMove {
+    0% { left: -75%; }
+    50% { left: 125%; }
+    100% { left: 125%; }
+}
+
+/* Inner Content */
+.login-container * {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-size: 26px;
+    color: #ff5c00;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.input::placeholder {
+    color: #ff5c00;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff5c00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #e65100;
+}
+.text {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.link {
+    color: #ff5c00;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 11px;
+}
+.profile-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.profile-card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 0 50px rgba(255,102,0,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shine Animation */
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: -75%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,165,0,0.2), transparent);
+    transform: skewX(-20deg);
+    animation: shineMove 3s infinite;
+    z-index: 1;
+}
+
+.profile-card * {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff5c00;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    color: #ff5c00;
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.profile-info {
+    color: #fff;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.profile-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 50px rgba(255, 102, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 500px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shine */
+.profile-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: -75%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,165,0,0.2), transparent);
+    transform: skewX(-20deg);
+    animation: shineMove 3s infinite;
+    z-index: 1;
+}
+
+.profile-container * {
+    position: relative;
+    z-index: 2;
+}

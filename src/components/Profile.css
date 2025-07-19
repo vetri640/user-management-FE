@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body, .profile-bg {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-title {
+    color: #4c00ff;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.subtitle {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.profile-wrapper {
+    width: 90%;
+    max-width: 1000px;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    flex: 1;
+    min-width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00c6ff;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.details {
+    font-size: 14px;
+    color: #777;
+}
+
+.right-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.info-card {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.info-card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-card table {
+    width: 100%;
+    font-size: 14px;
+}
+
+.info-card td {
+    padding: 8px 5px;
+}
+
+.file-input {
+    margin-top: 10px;
+}
+
+.button-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.orange {
+    background: #ff6600;
+    color: #fff;
+}
+
+.btn.gray {
+    background: #ccc;
+    color: #333;
+}
+
+.btn.red {
+    background: #ff3333;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
